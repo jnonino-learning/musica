@@ -4,19 +4,141 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introducción}
 \label{chap:introduccion}
-
-\section{Conceptos}
         
-PARA COMPLETAR
-    
 \section{Notas musicales}
 
-PARA COMPLETAR
+El sonido es una onda generada por un cuerpo sonoro al vibrar trasmitida por algún medio, generalmente el aire, que luego es captada por el oído.
+
+
+Los sonidos musicales, generalmente se asocian a ondas sinusoidales sin cambios bruscos. Se utilizan las notas musicales para hacer referencia a un sonido de una determinada frecuencia. 
+
+Aunque el oído humano es capaz de percibir sonidos desde los 20 Hz y los 20 KHz, el lenguaje establecido consta de 12 notas musicales asociadas cada una a una frecuencia de vibración. Si bien existen 12 notas musicales, la nomenclatura definida o el abecedario musical se compone de 7 nombres diferenciados, conocidos como notas fundamentales y el resto se forma a partir de alteraciones en los nombres anteriores.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l|l|l|l|l|l|l|l|}
+    \cline{2-8}
+    Sistema Latino    & Do & Re & Mi & Fa & Sol & La & Si \\ \cline{2-8} 
+    Cifrado Americano & C  & D  & E  & F  & G   & A  & B  \\ \cline{2-8} 
+    \end{tabular}
+\end{table}
+
+Las alteraciones, pueden ser \textbf{\emph{sostenidos (\#)}} o \textbf{\emph{bemoles (b)}}, se agregan a las notas fundamentales para conformar el abecedario de 12 notas cada una de ellas separada por un valor entero conocido como semitono. Los semitonos son medidos desde el \emph{La Central ($La_4$)} el cual se dice que corresponde a la frecuencia de 440 Hz. la fórmula para determinar la frecuencia de cada una de las notas musicales es la siguiente. Siendo \emph{n} un número entero de semitonos, positivo para notas más agudas que el La Central y negativo para notas más graves.
+
+\begin{equation*}
+    f = 2^{n/12} \times 440 Hz
+\end{equation*}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+    \cline{1-4}
+    Do          & C        & $f = 2^{-9/12} \times 440 Hz$ & $261.63 Hz$ \\ \cline{1-4}
+    Do\# / Reb  & C\# / Db & $f = 2^{-8/12} \times 440 Hz$ & $277.18 Hz$ \\ \cline{1-4}
+    Re          & D        & $f = 2^{-7/12} \times 440 Hz$ & $293.66 Hz$ \\ \cline{1-4}
+    Re\# / Mib  & D\# / Eb & $f = 2^{-6/12} \times 440 Hz$ & $311.13 Hz$ \\ \cline{1-4}
+    Mi          & E        & $f = 2^{-5/12} \times 440 Hz$ & $329.63 Hz$ \\ \cline{1-4}
+    Fa          & F        & $f = 2^{-4/12} \times 440 Hz$ & $349.23 Hz$ \\ \cline{1-4}
+    Fa\# / Sol  & F\# / Gb & $f = 2^{-3/12} \times 440 Hz$ & $369.99 Hz$ \\ \cline{1-4}
+    Sol         & G        & $f = 2^{-2/12} \times 440 Hz$ & $392.00 Hz$ \\ \cline{1-4}
+    Sol\# / Lab & G\# / Ab & $f = 2^{-1/12} \times 440 Hz$ & $415.30 Hz$ \\ \cline{1-4}
+    La          & A        & $f = 2^{0/12}  \times 440 Hz$ & $440.00 Hz$ \\ \cline{1-4}
+    La\# / Sib  & A\# / Bb & $f = 2^{1/12}  \times 440 Hz$ & $466.16 Hz$ \\ \cline{1-4}
+    Si          & B        & $f = 2^{2/12}  \times 440 Hz$ & $493.88 Hz$ \\ \cline{1-4}
+    Do          & C        & $f = 2^{3/12}  \times 440 Hz$ & $523.25 Hz$ \\ \cline{1-4}
+    \end{tabular}
+\end{table}
+
+Como se puede observar, existen notas que reciben dos nombres, es decir, hay dos maneras diferentes de nombrar sonidos iguales. Esto se conoce como \textbf{\emph{enarmonía}}. De todas maneras, aunque al mismo sonido se le puedan atribuir dos o más nombres, musicalmente no es lo mismo utilizar uno u otro nombre, como se verá más adelante.
+
+Luego de agotar los 12 símbolos, 12 semitonos mas adelante o detrás, la nomenclatura comienza a repetirse. Esto se conoce como \textbf{\emph{octavas}}. Por ejemplo:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+    \cline{1-4}
+    La & A & $f = 2^{-24/12} \times 440 Hz$ & $= 110.00  Hz$ \\ \cline{1-4}
+    La & A & $f = 2^{-12/12} \times 440 Hz$ & $= 220.00  Hz$ \\ \cline{1-4}
+    La & A & $f = 2^{0/12}   \times 440 Hz$ & $= 440.00  Hz$ \\ \cline{1-4}
+    La & A & $f = 2^{12/12}  \times 440 Hz$ & $= 880.00  Hz$ \\ \cline{1-4}
+    La & A & $f = 2^{24/12}  \times 440 Hz$ & $= 1760.00 Hz$ \\ \cline{1-4}
+    \end{tabular}
+\end{table}
+
+Lo mismo puede ser aplicado para cualquier nota.
 
     \subsection{Las notas en la guitarra}
 
-    PARA COMPLETAR
+    Las notas presentes en una guitarra, pueden variar según la afinación elegida pero existe una afinación estándar para guitarras de seis cuerdas. Dicha afinación es, comenzando desde la cuerda más grave a la más aguda, Mi/E, La/A, D/Re, G/Sol, B/Si y E/Mi.
+    
+    Cada cuerda recibe un numero a modo de nombre de esta. De esta manera, la cuerda más grave, la superior es la sexta cuerda y la cuerda inferior, la más aguda, es la primera cuerda. En la siguiente tabla se muestra que nota se corresponde cada traste de la guitarra.
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccccccccccccc}
+        \textit{\textbf{}}                & \textit{\textbf{Aire(0)}} & \textit{\textbf{1}}      & \textit{\textbf{2}}      & \textit{\textbf{3}}      & \textit{\textbf{4}}      & \textit{\textbf{5}}    & \textit{\textbf{6}}      & \textit{\textbf{7}}      & \textit{\textbf{8}}      & \textit{\textbf{9}}      & \textit{\textbf{10}}   & \textit{\textbf{11}}     & \textit{\textbf{12}}   \\ \cline{2-14} 
+        \multicolumn{1}{c|}{\textit{1ra}} & \multicolumn{1}{c|}{E}    & \multicolumn{1}{c|}{F}   & \multicolumn{1}{c|}{F\#} & \multicolumn{1}{c|}{G}   & \multicolumn{1}{c|}{G\#} & \multicolumn{1}{c|}{A} & \multicolumn{1}{c|}{A\#} & \multicolumn{1}{c|}{B}   & \multicolumn{1}{c|}{C}   & \multicolumn{1}{c|}{C\#} & \multicolumn{1}{c|}{D} & \multicolumn{1}{c|}{D\#} & \multicolumn{1}{c|}{E} \\ \cline{2-14} 
+        \multicolumn{1}{c|}{\textit{2da}} & \multicolumn{1}{c|}{B}    & \multicolumn{1}{c|}{C}   & \multicolumn{1}{c|}{C\#} & \multicolumn{1}{c|}{D}   & \multicolumn{1}{c|}{D\#} & \multicolumn{1}{c|}{E} & \multicolumn{1}{c|}{F}   & \multicolumn{1}{c|}{F\#} & \multicolumn{1}{c|}{G}   & \multicolumn{1}{c|}{G\#} & \multicolumn{1}{c|}{A} & \multicolumn{1}{c|}{A\#} & \multicolumn{1}{c|}{B} \\ \cline{2-14} 
+        \multicolumn{1}{c|}{\textit{3ra}} & \multicolumn{1}{c|}{G}    & \multicolumn{1}{c|}{G\#} & \multicolumn{1}{c|}{A}   & \multicolumn{1}{c|}{A\#} & \multicolumn{1}{c|}{B}   & \multicolumn{1}{c|}{C} & \multicolumn{1}{c|}{C\#} & \multicolumn{1}{c|}{D}   & \multicolumn{1}{c|}{D\#} & \multicolumn{1}{c|}{E}   & \multicolumn{1}{c|}{F} & \multicolumn{1}{c|}{F\#} & \multicolumn{1}{c|}{G} \\ \cline{2-14} 
+        \multicolumn{1}{c|}{\textit{4ta}} & \multicolumn{1}{c|}{D}    & \multicolumn{1}{c|}{D\#} & \multicolumn{1}{c|}{E}   & \multicolumn{1}{c|}{F}   & \multicolumn{1}{c|}{F\#} & \multicolumn{1}{c|}{G} & \multicolumn{1}{c|}{G\#} & \multicolumn{1}{c|}{A}   & \multicolumn{1}{c|}{A\#} & \multicolumn{1}{c|}{B}   & \multicolumn{1}{c|}{C} & \multicolumn{1}{c|}{C\#} & \multicolumn{1}{c|}{D} \\ \cline{2-14} 
+        \multicolumn{1}{c|}{\textit{5ta}} & \multicolumn{1}{c|}{A}    & \multicolumn{1}{c|}{A\#} & \multicolumn{1}{c|}{B}   & \multicolumn{1}{c|}{C}   & \multicolumn{1}{c|}{C\#} & \multicolumn{1}{c|}{D} & \multicolumn{1}{c|}{D\#} & \multicolumn{1}{c|}{E}   & \multicolumn{1}{c|}{F}   & \multicolumn{1}{c|}{F\#} & \multicolumn{1}{c|}{G} & \multicolumn{1}{c|}{G\#} & \multicolumn{1}{c|}{A} \\ \cline{2-14} 
+        \multicolumn{1}{c|}{\textit{6ta}} & \multicolumn{1}{c|}{E}    & \multicolumn{1}{c|}{F}   & \multicolumn{1}{c|}{F\#} & \multicolumn{1}{c|}{G}   & \multicolumn{1}{c|}{G\#} & \multicolumn{1}{c|}{A} & \multicolumn{1}{c|}{A\#} & \multicolumn{1}{c|}{B}   & \multicolumn{1}{c|}{C}   & \multicolumn{1}{c|}{C\#} & \multicolumn{1}{c|}{D} & \multicolumn{1}{c|}{D\#} & \multicolumn{1}{c|}{E} \\ \cline{2-14} 
+        \end{tabular}
+    \end{table}
+
+    Con esta afinación se puede conseguir abarcar tres octavas, como se observa en la siguiente figura.
+
+    \begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth,keepaspectratio]{NotasGuitarra}
+		\caption{Octavas en la guitarra}
+		\label{fig:cronograma}
+    \end{figure}
+    
+    Existen algunas reglas útiles para ubicar y memorizar las notas en el mástil de la guitarra.
+    \begin{enumerate}
+        \item La primera cuerda y la sexta tienen las mismas notas.
+        \item Desde cualquier nota en la sexta cuerda, yendo hasta la cuarta cuerda (cuerda de por medio) y a un traste de por medio hacia adelante se encuentra la octava.
+        \item Desde cualquier nota en la cuarta cuerda, yendo hasta la segunda cuerda (cuerda de por medio) y a dos trastes de por medio hacia adelante se encuentra la octava.
+        \item Desde cualquier nota en la primera cuerda, yendo hasta la tercera cuerda, dos trastes de por medio atrás esta la octava.
+        \item Desde cualquier nota en la tercera cuerda, yendo hasta la quinta cuerda, un traste de por medio atrás esta la octava.
+    \end{enumerate}
 
 \section{Introducción a los intervalos}
 
-PARA COMPLETAR
+Un intervalo musical es la diferencia de \textbf{altura (frecuencia)} entre dos notas musicales, medida \textbf{cuantitativamente (número)} en grados o notas naturales y \textbf{cualitativamente (especie)} en tonos y semitonos. Los intervalos musicales tienen dos palabras que conforman su nombre completo, por ejemplo, un intervalo es: Segunda Mayor. La palabra 'segunda' es la primera parte que indica la clasificación del intervalo (cantidad) y la palabra 'mayor' es la calificación del intervalo (cualidad).
+
+Existen 8 clasificaciones (cantidades) básicas para describir un intervalo: \textbf{Unísono}, \textbf{Segunda}, \textbf{Tercera}, \textbf{Cuarta}, \textbf{Quinta}, \textbf{Sexta}, \textbf{Séptima} y \textbf{Octava}. Para entender el concepto, es posible comenzar asumiendo que no existen las alteraciones y que sólo existen las notas C, D, E, F, G, A y B. Para saber la clasificación del intervalo entre dos notas, por ejemplo, entre E y A, se debe contar la cantidad de notas entre ellas: con E va una, con F van dos, con G van tres y con A son cuatro, por lo tanto, es una cuarta. Si el resultado fuese 5 entonces sería una quinta y así sucesivamente. 
+
+Cuando se introducen las alteraciones, aparecen dos nombres posibles para la misma nota se necesita una mayor precisión para determinar cual de los nombres corresponde utilizar. Por ejemplo, si se parte de la nota \emph{C}, y analizamos la nota \emph{F\#/Gb}, sabemos que la distancia entre ambas notas es de 6 semitonos pero surge la pregunta de si es una \textbf{\emph{cuarta (F\#)}} o una \textbf{\emph{quinta (Gb)}}.  Aquí es donde son necesarias las cualidades de los intervalos. Para nombrar las cualidades se utilizan 5 palabras básicas: \textbf{Mayor}, \textbf{Menor}, \textbf{Aumentada}, \textbf{Disminuida} y \textbf{Justa}. Estas cualidades indican la distancia en tonos exacta entre dos notas.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccccc}
+    \textbf{Clasificación} & \multicolumn{4}{c}{\textbf{Calificación}}                          \\
+    Segunda                & Disminuida (0st)  & Menor (1st)  & Mayor (2st)  & Aumentada (3st)  \\
+    Tercera                & Disminuida (2st)  & Menor (3st)  & Mayor (4st)  & Aumentada (5st)  \\
+    Cuarta                 & Disminuida (4st)  &              & Justa (5st)  & Aumentada (6st)  \\
+    Quinta                 & Disminuida (6st)  &              & Justa (7st)  & Aumentada (8st)  \\
+    Sexta                  & Disminuida (7st)  & Menor (8st)  & Mayor (9st)  & Aumentada (10st) \\
+    Séptima                & Disminuida (9st)  & Menor (10st) & Mayor (11st) & Aumentada (12st) \\
+    Octava                 & Disminuida (11sp) &              & Justa (12st) & Aumentada (13st)
+    \end{tabular}
+\end{table}
+
+De esta manera, si se habla de una cuarta aumentada por encima de \emph{C}, se habla exactamente de un \emph{F\#} y no de un \emph{Gb}. Del mismo modo, indicar una quinta disminuida por encima de \emph{C} es nombrar la nota \emph{Gb}, no \emph{F\#}.
+
+Los \emph{aumentados} son un semitono más alto que un intervalo \emph{mayor}, y son un semitono más alto que un intervalo \emph{justo}. Los intervalos \emph{disminuidos} son un semitono más pequeños que un intervalo \emph{justo}, y un semitono más pequeños que un intervalo \emph{menor}. Por ejemplo:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lllllll}
+    \hline
+    \multicolumn{2}{l}{Nota Base}           & \multicolumn{5}{l}{C}                                                                                   \\ \hline
+    \multicolumn{7}{l}{}                                                                                                                              \\ \hline
+    Sexta & \multicolumn{1}{l|}{Disminuida} & \multicolumn{1}{l|}{Abb} & \multicolumn{1}{l|}{7 st}  & \multicolumn{1}{l|}{G}   & Justa      & Quinta  \\ \hline
+    Sexta & \multicolumn{1}{l|}{Menor}      & \multicolumn{1}{l|}{Ab}  & \multicolumn{1}{l|}{8 st}  & \multicolumn{1}{l|}{G\#} & Aumentada  & Quinta  \\ \hline
+    Sexta & \multicolumn{1}{l|}{Mayor}      & \multicolumn{1}{l|}{A}   & \multicolumn{1}{l|}{9 st}  & \multicolumn{1}{l|}{Bbb} & Disminuida & Séptima \\ \hline
+    Sexta & \multicolumn{1}{l|}{Aumentado}  & \multicolumn{1}{l|}{A\#} & \multicolumn{1}{l|}{10 st} & \multicolumn{1}{l|}{Bb}  & Menor      & Séptima \\ \hline
+    \end{tabular}
+\end{table}
