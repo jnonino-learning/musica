@@ -1,10 +1,14 @@
-# Apuntes de Música #
+# Apuntes de MÃºsica #
 
-Apuntes de Música
+[![](https://img.shields.io/github/license/jnonino/musica)](https://github.com/jnonino/musica)
+[![](https://img.shields.io/github/issues/jnonino/musica)](https://github.com/jnonino/musica)
+[![](https://img.shields.io/github/issues-closed/jnonino/musica)](https://github.com/jnonino/musica)
+[![](https://img.shields.io/github/languages/code-size/jnonino/musica)](https://github.com/jnonino/musica)
+[![](https://img.shields.io/github/repo-size/jnonino/musica)](https://github.com/jnonino/musica)
 
 ## Autor ##
 
-* Julián Nonino
+* JuliÃ¡n Nonino
 
 ## Requisitos ##
 
@@ -21,6 +25,6 @@ Antes de comenzar a trabajar con este informe, se debe instalar estas herramient
     * [Spanish - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-spanish)
 
 
-## Generación del Informe ##
+## GeneraciÃ³n del Informe ##
 
 El archivo informe.pdf sera generado dentro del workspace cada vez que el proyecto sea guardado.
